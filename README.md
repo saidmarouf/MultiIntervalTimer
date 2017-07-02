@@ -51,3 +51,8 @@ DispatchQueue.main.asyncAfter(deadline: cancellationTime) {
 // interval value: 0.0 interval index: 0
 // interval value: 0.5 interval index: 1
 ```
+
+## TODOs
+- Provide default intervals. For example a set of intervals that represent an EaseOut curve.
+- Option to fire at the start and end of the fullDuration.
+- Maybe find a better name than `MultIntervalTimer`. Is the use of `interval` clear or not? Let me know :)
