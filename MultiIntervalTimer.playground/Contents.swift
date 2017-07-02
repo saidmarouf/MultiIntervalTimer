@@ -13,7 +13,7 @@ timer.fire(intervalBlock: { interval, intervalIndex in
     print("interval value:", interval, "interval index:", intervalIndex)
 })
 
-let second_timer = MultiIntervalTimer(intervals: [0.0, 0.5, 0.8, 1.0], fullDuration: 6.0)
+let second_timer = MultiIntervalTimer(intervals: [0.0, 0.5, 0.8, 1.0], fullDuration: 7.0)
 second_timer.fire(intervalBlock: { interval, intervalIndex in
     print("second_timer interval value:", interval, "interval index:", intervalIndex)
 })
