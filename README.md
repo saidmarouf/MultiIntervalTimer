@@ -16,7 +16,7 @@ A Timer that fires at various custom interval values, rather than a single speci
 
 1. A timer that fires at the intervals `[0.2, 1.0]` over a `5.0` second `fullDuration`. This means the timer will fire after `1` second (= `0.2 * 5.0`) and after `5` seconds (= `1.0 * 5.0`).
 
-```
+```swift
 // initialize
 let timer = MultiIntervalTimer(intervals: [0.2, 1.0], fullDuration: 5.0)
 
@@ -32,7 +32,7 @@ timer.fire(intervalBlock: { interval, intervalIndex in
 
 2. A timer that fires at the intervals `[0.0, 0.5, 0.8, 1.0]` over a `6.0` second `fullDuration`. This translates to the timer firing after `0, 3, 4.8` and `6` seconds from firing the timer. We then will try to cancel the timer after `4` seconds.
 
-```
+```swift
 // initialize
 let timer = MultiIntervalTimer(intervals: [0.0, 0.5, 0.8, 1.0], fullDuration: 6.0)
 
